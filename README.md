@@ -2,7 +2,7 @@
 backup all organisation git repo on a USB key to be able to recover from a nasty virus.
 
 In case a nasty virus spread on major OS and decide to `rm -rf` all volumes on let say.. first on next month,
-you'd better have a copy of your git repository (as they store all intangible the production of your organisation)
+you'd better have a copy of your git repositories (as they store all intangible the production of your organisation)
 on a removable storage.
 
 ## get started
