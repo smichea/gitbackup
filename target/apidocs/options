@@ -1,0 +1,25 @@
+-classpath
+'C:/Users/owner/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.1/log4j-api-2.13.1.jar;C:/Users/owner/.m2/repository/org/apache/logging/log4j/log4j-core/2.13.1/log4j-core-2.13.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'E:/Documents/developpement/webdrone/gitbackup/src/main/java'
+-Xdoclint:none
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/Documents/developpement/webdrone/gitbackup/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Gitbackup 1.0-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' 'E:/Documents/developpement/webdrone/gitbackup/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Gitbackup 1.0-SNAPSHOT API'
