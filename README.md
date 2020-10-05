@@ -62,3 +62,4 @@ Once you configuration file is complete, either double click on  `gitbackup.bat`
 ```
 java -jar gitbackup-1.0.jar
 ```
+as soon as the backup starts you can use another window and delete the passwords in the configuration files
