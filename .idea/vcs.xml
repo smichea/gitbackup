@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/manaty/rtbabies" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/meveo/mv-calendar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/mv-calendar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/mv-template" vcs="Git" />
   </component>
 </project>

@@ -74,7 +74,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -137,9 +137,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/manaty/rtbabies" />
+      <path value="$PROJECT_DIR$/meveo/mv-calendar" />
+      <path value="$PROJECT_DIR$/mv-calendar" />
+      <path value="$PROJECT_DIR$/mv-template" />
+    </ignored-roots>
     <MESSAGE value="pom setup" />
     <MESSAGE value="delete target, list al repos of a github organisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete target, list al repos of a github organisation" />
+    <MESSAGE value="add authent logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add authent logs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1600600579165">
@@ -210,6 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601907696744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601907696744" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601887025678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

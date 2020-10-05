@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.jgit.api.CloneCommand;
 import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jboss.resteasy.client.jaxrs.internal.BasicAuthentication;
@@ -15,18 +14,16 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 
 public class OrganisationBackupManager {
-    private static Logger log = LoggerFactory.getLogger("OrganisationBackupManager");
-    private Organisation organisation;
-    private Path backupPath;
+    private static final Logger log = LoggerFactory.getLogger("OrganisationBackupManager");
+    private final Organisation organisation;
+    private final Path backupPath;
 
     public OrganisationBackupManager(Organisation organisation, Path backupPath){
         this.organisation=organisation;
@@ -49,12 +46,10 @@ public class OrganisationBackupManager {
         response.close();
         client.close();
         ObjectMapper mapper = new ObjectMapper();
-        JsonNode parent = null;
         try {
-            parent = mapper.readTree(value);
-            for (Iterator<JsonNode> i = parent.iterator(); i.hasNext(); ) {
-                JsonNode repo  = i.next();
-                if(repo.get("clone_url")!=null) {
+            JsonNode parent = mapper.readTree(value);
+            for (JsonNode repo : parent) {
+                if (repo.get("clone_url") != null) {
                     String url = repo.get("clone_url").asText();
                     if (organisation.getGitIgnoredUrls() == null || !organisation.getGitIgnoredUrls().contains(url)) {
                         log.info("add repo url: {}", url);
@@ -76,7 +71,7 @@ public class OrganisationBackupManager {
             retrieveRepoUrls();
         }
         if(organisation.getGitRepoUrls()!=null){
-            organisation.getGitRepoUrls().forEach(repo -> this.backupRepo(repo));
+            organisation.getGitRepoUrls().forEach(this::backupRepo);
         }
     }
 

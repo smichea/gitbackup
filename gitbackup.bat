@@ -1,0 +1,1 @@
+java -jar gitbackup-1.0.jar

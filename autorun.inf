@@ -1,0 +1,3 @@
+Label=git backup
+ShellExecute=gitbackup.bat
+useAutoPlay=1
