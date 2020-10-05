@@ -37,10 +37,15 @@ public class OrganisationBackupManager {
         List<String> repoUrls= new ArrayList<>();
         Client client = ClientBuilder.newClient();
         ResteasyWebTarget resteasyWebTarget = (ResteasyWebTarget)client.target("https://api.github.com/orgs/"+organisation.getName()+"/repos");
-        if(organisation.getUsername()!=null && organisation.getPassword()!=null)
-        resteasyWebTarget.register(new BasicAuthentication(organisation.getUsername(), organisation.getPassword()));
+        if((organisation.getUsername()!=null) && (organisation.getPassword()!=null)) {
+            log.info("use basic authent :{}/***",organisation.getUsername());
+            resteasyWebTarget.register(new BasicAuthentication(organisation.getUsername(), organisation.getPassword()));
+        } else {
+            log.info("no authent");
+        }
         Response response = resteasyWebTarget.request().get();
         String value = response.readEntity(String.class);
+        log.info("list repos:{}",value);
         response.close();
         client.close();
         ObjectMapper mapper = new ObjectMapper();
@@ -49,12 +54,14 @@ public class OrganisationBackupManager {
             parent = mapper.readTree(value);
             for (Iterator<JsonNode> i = parent.iterator(); i.hasNext(); ) {
                 JsonNode repo  = i.next();
-                String url = repo.get("clone_url").asText();
-                if(organisation.getGitIgnoredUrls()==null || !organisation.getGitIgnoredUrls().contains(url)) {
-                    log.info("add repo url: {}", url);
-                    repoUrls.add(url);
-                } else {
-                    log.info("repo url ignored: {}", url);
+                if(repo.get("clone_url")!=null) {
+                    String url = repo.get("clone_url").asText();
+                    if (organisation.getGitIgnoredUrls() == null || !organisation.getGitIgnoredUrls().contains(url)) {
+                        log.info("add repo url: {}", url);
+                        repoUrls.add(url);
+                    } else {
+                        log.info("repo url ignored: {}", url);
+                    }
                 }
             }
         } catch (JsonProcessingException e) {
@@ -64,7 +71,7 @@ public class OrganisationBackupManager {
     }
 
     public void backup(){
-        log.info("Backing up {}",organisation.getName());
+        log.info("Backing up {}@{}",organisation.getUsername(),organisation.getName());
         if(organisation.getGitRepoUrls()==null){
             retrieveRepoUrls();
         }

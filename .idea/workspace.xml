@@ -23,22 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d8d6e-8ff7-4146-9654-3a4ea54fcefc" name="Default Changelist" comment="pom setup">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/Backup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/Backup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/Organisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/Organisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/OrganisationBackupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/manaty/gitbackup/OrganisationBackupManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/Backup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/Backup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/Organisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/Organisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/OrganisationBackupManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/manaty/gitbackup/OrganisationBackupManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gitbackup-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gitbackup-1.0-SNAPSHOT-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gitbackup-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom setup" />
+    <MESSAGE value="delete target, list al repos of a github organisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete target, list al repos of a github organisation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1600600579165">
@@ -174,57 +162,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600774106564" />
-    <state width="1877" height="651" key="GridCell.Tab.0.bottom" timestamp="1601886856801">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="651" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601886856801" />
-    <state width="1877" height="651" key="GridCell.Tab.0.center" timestamp="1601886856801">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1601906597635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="651" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601886856801" />
-    <state width="1877" height="651" key="GridCell.Tab.0.left" timestamp="1601886856801">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597635" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1601906597635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="651" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601886856801" />
-    <state width="1877" height="651" key="GridCell.Tab.0.right" timestamp="1601886856801">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597635" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1601906597635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="651" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601886856801" />
-    <state width="1877" height="541" key="GridCell.Tab.1.bottom" timestamp="1601883025815">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597635" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601883025815" />
-    <state width="1877" height="541" key="GridCell.Tab.1.center" timestamp="1601883025815">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601883025815" />
-    <state width="1877" height="541" key="GridCell.Tab.1.left" timestamp="1601883025815">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601883025815" />
-    <state width="1877" height="541" key="GridCell.Tab.1.right" timestamp="1601883025815">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601883025815" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1601882636098">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601882636098" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1601882636098">
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601882636098" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1601882636097">
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601882636097" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1601882636098">
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1601906597636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601882636098" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600647534359">
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601906597636" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601887025678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600647534359" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601887025678" />
   </component>
 </project>
