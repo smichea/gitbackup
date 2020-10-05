@@ -8,6 +8,7 @@ public class Organisation {
     private String username;
     private String password;
     private List<String> gitRepoUrls;
+    private List<String> gitIgnoredUrls;
 
     public String getName() {
         return name;
@@ -47,5 +48,13 @@ public class Organisation {
 
     public void setGitRepoUrls(List<String> gitRepoUrls) {
         this.gitRepoUrls = gitRepoUrls;
+    }
+
+    public List<String> getGitIgnoredUrls() {
+        return gitIgnoredUrls;
+    }
+
+    public void setGitIgnoredUrls(List<String> gitIgnoredUrls) {
+        this.gitIgnoredUrls = gitIgnoredUrls;
     }
 }

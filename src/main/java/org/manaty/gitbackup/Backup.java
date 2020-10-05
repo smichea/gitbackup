@@ -36,6 +36,9 @@ public class Backup {
             org.setName("manaty");
             org.setUsername("myusername");
             org.setPassword("mypassword");
+            List<String> ignoredrepos=new ArrayList<>();
+            ignoredrepos.add("https://github.com/meveo-org/mv-calendar.git");
+            org.setGitIgnoredUrls(ignoredrepos);
             orgs.add(org);
             org=new Organisation();
             org.setName("meveo");
